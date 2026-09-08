@@ -216,14 +216,16 @@
   }
   .candidate-photo{
     aspect-ratio:1/1; width:100%;
-    border:1.5px dashed var(--line);
     border-radius:14px;
     background:var(--paper-warm);
-    display:flex; align-items:center; justify-content:center;
-    text-align:center; padding:16px;
+    overflow:hidden;
     margin-bottom:22px;
   }
-  .candidate-photo span{ font-size:0.82rem; color:var(--ink-soft); line-height:1.5; }
+  .candidate-photo img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
   .solo-bubble{
     position:relative;
     background:var(--paper-warm);
@@ -436,8 +438,8 @@
       <div class="ballot-row">
         <div class="ballot-num">2</div>
         <div class="ballot-info">
-          <div class="name">Mith</div>
-          <div class="role">Treasurer</div>
+          <div class="name">Ved</div>
+          <div class="role">Secretary</div>
         </div>
         <div class="ballot-check">
           <svg viewBox="0 0 24 24" fill="none" stroke="#7A1128" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -446,8 +448,8 @@
       <div class="ballot-row">
         <div class="ballot-num">3</div>
         <div class="ballot-info">
-          <div class="name">Ved</div>
-          <div class="role">Secretary</div>
+          <div class="name">Mith</div>
+          <div class="role">Treasurer</div>
         </div>
         <div class="ballot-check">
           <svg viewBox="0 0 24 24" fill="none" stroke="#7A1128" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
@@ -476,7 +478,7 @@
     <div class="candidates">
       <div class="candidate">
         <div class="cnum">01</div>
-        <div class="candidate-photo"><span>Add Aryav's photo here</span></div>
+        <div class="candidate-photo"><img src="aryav.jpeg" alt="Aryav"></div>
         <span class="role-tag">Vice President</span>
         <h3>Aryav</h3>
         <p>As Vice President, Aryav will support the President in leading the council, represent students directly in council and administration meetings, oversee committee work, and step in to lead whenever the President can't.</p>
@@ -485,21 +487,21 @@
       </div>
       <div class="candidate">
         <div class="cnum">02</div>
-        <div class="candidate-photo"><span>Add Mith's photo here</span></div>
-        <span class="role-tag">Treasurer</span>
-        <h3>Mith</h3>
-        <p>As Treasurer, Mith will manage the council's budget, track and approve funding for student events, keep spending transparent and reported to students, and lead fundraising for council initiatives.</p>
-        <div class="pitch">"[Add Mith's one-line pitch to students here.]"</div>
-        <div class="solo-bubble"><span class="solo-tag">In Mith's words</span>[Add a short, personal thought from Mith — why this matters to him.]</div>
-      </div>
-      <div class="candidate">
-        <div class="cnum">03</div>
-        <div class="candidate-photo"><span>Add Ved's photo here</span></div>
+        <div class="candidate-photo"><img src="Ved.jpeg" alt="Ved"></div>
         <span class="role-tag">Secretary</span>
         <h3>Ved</h3>
         <p>As Secretary, Ved will keep official records and meeting minutes, handle communication between the council and students, manage scheduling, and make sure every council decision is documented and easy to find.</p>
         <div class="pitch">"[Add Ved's one-line pitch to students here.]"</div>
         <div class="solo-bubble"><span class="solo-tag">In Ved's words</span>[Add a short, personal thought from Ved — why this matters to him.]</div>
+      </div>
+      <div class="candidate">
+        <div class="cnum">03</div>
+        <div class="candidate-photo"><img src="mith.jpeg" alt="Mith"></div>
+        <span class="role-tag">Treasurer</span>
+        <h3>Mith</h3>
+        <p>As Treasurer, Mith will manage the council's budget, track and approve funding for student events, keep spending transparent and reported to students, and lead fundraising for council initiatives.</p>
+        <div class="pitch">"[Add Mith's one-line pitch to students here.]"</div>
+        <div class="solo-bubble"><span class="solo-tag">In Mith's words</span>[Add a short, personal thought from Mith — why this matters to him.]</div>
       </div>
     </div>
   </div>
